@@ -123,29 +123,9 @@ export default function LoginPage() {
             </div>
           </form>
 
-          {/* Accesos rápidos de prueba para agilizar el tipeo en la defensa */}
+          {/*cracion de nuevo usuario */}
           <div className="mt-6 pt-5 border-t border-slate-200">
-            <p className="text-[11px] font-bold uppercase text-slate-500 text-center mb-3">
-              Credenciales Registradas en Padrón (Clic para autocompletar)
-            </p>
-            <div className="grid grid-cols-2 gap-2 text-xs">
-              <button
-                type="button"
-                onClick={() => autocompletarCredenciales('admin@consorcio.com')}
-                className="p-2.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-left transition-colors cursor-pointer"
-              >
-                <span className="font-bold text-slate-900 block">🔑 Administrador</span>
-                <span className="text-[11px] text-slate-500 font-mono">admin@consorcio.com</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => autocompletarCredenciales('propietario4b@consorcio.com')}
-                className="p-2.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-left transition-colors cursor-pointer"
-              >
-                <span className="font-bold text-slate-900 block">🏠 Propietario Verificado</span>
-                <span className="text-[11px] text-slate-500 font-mono">propietario4b@consorcio.com</span>
-              </button>
-            </div>
+
             <button
               type="button"
               onClick={() => router.push('/onboarding')}
